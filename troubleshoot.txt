@@ -1,0 +1,10 @@
+Ak vam pada docker scylla:
+sudo vim /etc/sysctl.conf
+
+Napisat na koniec suboru (zmeni maximalny pocet concurrent IO operacii):
+fs.aio-max-nr = 1048576
+
+ulozit a potom:
+sudo sysctl -p /etc/sysctl.conf
+
+

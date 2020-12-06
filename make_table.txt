@@ -1,0 +1,14 @@
+CREATE KEYSPACE pa195 WITH REPLICATION = { 'class':
+'SimpleStrategy', 'replication_factor': 1 };
+
+USE pa195;
+
+CREATE TABLE pa195.people (
+    id int,
+    address map<text, text>,
+    email text,
+    fullname text,
+    salary float,
+    surname text,
+    PRIMARY KEY (id, surname));
+
