@@ -1,4 +1,4 @@
-# pa195
+# NoSQL databases - PA195
 
 - Use `./run.sh` to create DB and fill with data.
 
